@@ -1,6 +1,10 @@
 # Sequence-similar-fold-switchers
 Code and data for predicting mutation-induced protein fold switching
 
+Note, the prediction pipeline was not used to produce the published data.  
+It is provided for users interested in easily assessing whether a given
+sequence might switch folds upon a limited number of mutations.
+
 Dependencies: clustal omega: http://www.clustal.org/omega/
               python3: https://www.python.org/downloads/
               pandas module for python3: https://www.python.org/downloads/
