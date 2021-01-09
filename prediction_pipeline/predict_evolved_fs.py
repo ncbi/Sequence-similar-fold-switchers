@@ -1,5 +1,21 @@
 #!/Library/Frameworks/Python.framework/Versions/3.8/bin/python3
 
+##########################################################################
+#This code predicts whether similar sequences switch folds
+#Authors: Allen Kim and Lauren Porter 
+#Contact: Lauren Porter (lauren.porter@nih.gov)
+#Inputs: Your email address (-e flag)
+#        2 fasta files containing sequences to be compared.
+#        The headers of the fastas should be formatted as:
+#        > title|accession name|information about protein
+#        Examples: GA.txt, GB.txt, RfaH_whole(or frag).txt
+#Outputs: summary.txt
+#Notes: The last field in summary.txt is the average secondary structure
+#       discrepancy between the inputted seq (accession number in field 2)
+#       and secondary structure predictions of all seqs in the file not
+#       containing the inputted seq
+###########################################################################
+
 import warnings
 warnings.filterwarnings('ignore', 'Could not import the lzma module.')
 import argparse
